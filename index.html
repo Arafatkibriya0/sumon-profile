@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sumon Chowdhury | Personal Profile</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,"Noto Sans Bengali",sans-serif;
+    background:#f3f5f8;
+    color:#111;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+/* COVER */
+.cover{
+    height:330px;
+    background:url("cover.jpg") center/cover no-repeat;
+    position:relative;
+}
+
+.cover::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(transparent,rgba(0,0,0,.55));
+}
+
+/* PROFILE */
+.profile-box{
+    background:white;
+    border-radius:0 0 25px 25px;
+    padding:0 25px 30px;
+    text-align:center;
+    position:relative;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:7px solid white;
+    box-shadow:0 4px 20px rgba(0,0,0,.25);
+    margin-top:-90px;
+    position:relative;
+    z-index:2;
+}
+
+.name{
+    font-size:34px;
+    margin-top:15px;
+    font-weight:800;
+}
+
+.verified{
+    color:#1877f2;
+    font-size:25px;
+}
+
+.title{
+    margin-top:8px;
+    font-size:18px;
+    color:#555;
+}
+
+.bio{
+    max-width:650px;
+    margin:20px auto;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* BUTTONS */
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.btn{
+    padding:13px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.call{
+    background:#111;
+    color:white;
+}
+
+.whatsapp{
+    background:#20c76a;
+    color:white;
+}
+
+.messenger{
+    background:#1877f2;
+    color:white;
+}
+
+/* CARDS */
+.section{
+    margin-top:20px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+.section h2{
+    font-size:24px;
+    margin-bottom:20px;
+    border-left:5px solid #1877f2;
+    padding-left:12px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.info-card{
+    background:#f7f8fa;
+    padding:18px;
+    border-radius:15px;
+}
+
+.info-card strong{
+    display:block;
+    margin-bottom:6px;
+    color:#555;
+}
+
+.info-card a{
+    color:#1877f2;
+    text-decoration:none;
+}
+
+/* STATS */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.stat{
+    text-align:center;
+    background:#f7f8fa;
+    padding:20px;
+    border-radius:15px;
+}
+
+.stat h3{
+    font-size:28px;
+    color:#1877f2;
+}
+
+.stat p{
+    color:#666;
+    margin-top:5px;
+}
+
+/* ACHIEVEMENT */
+.achievement{
+    display:flex;
+    gap:15px;
+    margin:15px 0;
+    padding:18px;
+    background:#f7f8fa;
+    border-radius:15px;
+}
+
+.icon{
+    font-size:30px;
+}
+
+/* CONTACT */
+.contact-item{
+    padding:16px 0;
+    border-bottom:1px solid #eee;
+    font-size:17px;
+}
+
+.contact-item:last-child{
+    border-bottom:none;
+}
+
+.contact-item a{
+    color:#1877f2;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+    .cover{
+        height:230px;
+    }
+
+    .profile-img{
+        width:145px;
+        height:145px;
+        margin-top:-72px;
+    }
+
+    .name{
+        font-size:27px;
+    }
+
+    .title{
+        font-size:16px;
+    }
+
+    .bio{
+        font-size:15px;
+    }
+
+    .info{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .section{
+        margin:12px;
+        padding:22px;
+    }
+
+    .profile-box{
+        padding:0 15px 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- COVER -->
+<div class="cover"></div>
+
+<!-- PROFILE -->
+<div class="profile-box">
+
+    <img src="profile.jpg" class="profile-img">
+
+    <h1 class="name">
+        Sumon Chowdhury <span class="verified">✓</span>
+    </h1>
+
+    <div class="title">
+        👑 গার্মেন্টস উদ্যোক্তা ও মেন্টর 👑
+    </div>
+
+    <div class="title">
+        পরিচালক — কোনাবাড়ী গার্মেন্টস ট্রেনিং সেন্টার
+    </div>
+
+    <p class="bio">
+        🚀 ২০০৮ থেকে দেশের বেকারত্ব দূর করতে কাজ করছি।<br>
+        🧵 ৩০০০+ মানুষকে গার্মেন্টস প্রশিক্ষণে দক্ষ করেছি।<br>
+        📍 গাজীপুর, কোনাবাড়ী, আমবাগা-তেঁতুলতলা মোড়
+    </p>
+
+    <div class="buttons">
+
+        <a class="btn call"
+           href="tel:+8801927571058">
+           📞 Call
+        </a>
+
+        <a class="btn whatsapp"
+           href="https://wa.me/8801927571058"
+           target="_blank">
+           💬 WhatsApp
+        </a>
+
+        <a class="btn messenger"
+           href="#">
+           💙 Messenger
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- SOCIAL STATS -->
+<div class="section">
+
+<h2>📊 Profile Statistics</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3>155K+</h3>
+<p>Followers</p>
+</div>
+
+<div class="stat">
+<h3>3.4K+</h3>
+<p>Posts</p>
+</div>
+
+<div class="stat">
+<h3>3000+</h3>
+<p>Trained People</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ABOUT -->
+<div class="section">
+
+<h2>👤 ব্যক্তিগত তথ্য</h2>
+
+<div class="info">
+
+<div class="info-card">
+<strong>নাম</strong>
+Sumon Chowdhury
+</div>
+
+<div class="info-card">
+<strong>পেশা</strong>
+Garments Entrepreneur & Mentor
+</div>
+
+<div class="info-card">
+<strong>প্রতিষ্ঠান</strong>
+Konabari Garments Training Center
+</div>
+
+<div class="info-card">
+<strong>কাজের ক্ষেত্র</strong>
+Garments Training & Skill Development
+</div>
+
+<div class="info-card">
+<strong>ঠিকানা</strong>
+Konabari, Gazipur, Bangladesh
+</div>
+
+<div class="info-card">
+<strong>শহর</strong>
+Dhaka, Bangladesh
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ACHIEVEMENTS -->
+<div class="section">
+
+<h2>🏆 অর্জন ও কাজ</h2>
+
+<div class="achievement">
+<div class="icon">🧵</div>
+<div>
+<strong>গার্মেন্টস প্রশিক্ষণ</strong>
+<p>
+৩০০০+ মানুষকে গার্মেন্টস কাজের প্রশিক্ষণে দক্ষ করার উদ্যোগ।
+</p>
+</div>
+</div>
+
+<div class="achievement">
+<div class="icon">👨‍🏫</div>
+<div>
+<strong>মেন্টরশিপ</strong>
+<p>
+নতুনদের গার্মেন্টস কাজ শেখানো এবং দক্ষতা উন্নয়নে সহযোগিতা।
+</p>
+</div>
+</div>
+
+<div class="achievement">
+<div class="icon">🏃</div>
+<div>
+<strong>Dhaka International Marathon 2025</strong>
+<p>
+International Marathon 2025-এ অংশগ্রহণ।
+</p>
+</div>
+</div>
+
+</div>
+
+
+<!-- CONTACT -->
+<div class="section">
+
+<h2>📞 Contact Information</h2>
+
+<div class="contact-item">
+📱 <strong>Phone:</strong>
+<a href="tel:+8801927571058">
+01927-571058
+</a>
+</div>
+
+<div class="contact-item">
+💬 <strong>WhatsApp:</strong>
+<a href="https://wa.me/8801927571058" target="_blank">
++880 1927-571058
+</a>
+</div>
+
+<div class="contact-item">
+📧 <strong>Email:</strong>
+<a href="mailto:tonmoyahmed058@gmail.com">
+tonmoyahmed058@gmail.com
+</a>
+</div>
+
+<div class="contact-item">
+📍 <strong>Address:</strong>
+Gazipur, Konabari, Ambaga-Tetultola Mor
+</div>
+
+<div class="contact-item">
+💼 <strong>Profession:</strong>
+Digital Creator
+</div>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+© 2026 Sumon Chowdhury
+<br>
+Personal Profile
+</footer>
+
+</div>
+
+</body>
+</html>
